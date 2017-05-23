@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34B14ABF1ED4712C006725F2 /* addRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B14ABE1ED4712C006725F2 /* addRectView.swift */; };
 		34BA0D851EA398D0008A83E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BA0D841EA398D0008A83E9 /* AppDelegate.swift */; };
 		34BA0D871EA398D0008A83E9 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BA0D861EA398D0008A83E9 /* MainVC.swift */; };
 		34BA0D8A1EA398D0008A83E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BA0D881EA398D0008A83E9 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34B14ABE1ED4712C006725F2 /* addRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addRectView.swift; sourceTree = "<group>"; };
 		34BA0D811EA398D0008A83E9 /* TimerAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BA0D841EA398D0008A83E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34BA0D861EA398D0008A83E9 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				34BA0D841EA398D0008A83E9 /* AppDelegate.swift */,
 				34BA0D861EA398D0008A83E9 /* MainVC.swift */,
+				34B14ABE1ED4712C006725F2 /* addRectView.swift */,
 				34BA0D881EA398D0008A83E9 /* Main.storyboard */,
 				34BA0D961EA39E45008A83E9 /* CircleView.swift */,
 				34BA0D8B1EA398D0008A83E9 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			files = (
 				34BA0D971EA39E45008A83E9 /* CircleView.swift in Sources */,
 				34BA0D871EA398D0008A83E9 /* MainVC.swift in Sources */,
+				34B14ABF1ED4712C006725F2 /* addRectView.swift in Sources */,
 				34BA0D851EA398D0008A83E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +309,7 @@
 				34BA0D951EA398D0008A83E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
