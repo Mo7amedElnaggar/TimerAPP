@@ -74,8 +74,5 @@ class MainVC: UIViewController {
     func Counter() {
         displayTime += 1
     }
-    
-    
-
 }
 
