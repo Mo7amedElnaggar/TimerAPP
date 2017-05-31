@@ -56,10 +56,6 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.18928818761728414" green="0.38013001902742982" blue="0.56129045050761417" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="YfA-XE-wSk" firstAttribute="width" secondItem="MKC-Cs-db0" secondAttribute="width" id="BKh-8x-ACw"/>
-                                            <constraint firstItem="YfA-XE-wSk" firstAttribute="height" secondItem="MKC-Cs-db0" secondAttribute="height" id="MEB-n6-PyK"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-oZ-Hxm">
                                         <rect key="frame" x="0.0" y="328.5" width="343" height="318.5"/>
@@ -99,8 +95,30 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="MKC-Cs-db0" firstAttribute="width" secondItem="5My-n8-1rc" secondAttribute="width" id="BJX-qK-fbZ"/>
+                                    <constraint firstItem="Mjk-oZ-Hxm" firstAttribute="centerY" secondItem="5My-n8-1rc" secondAttribute="centerY" id="SUu-Nd-VWa"/>
+                                    <constraint firstItem="MKC-Cs-db0" firstAttribute="height" secondItem="5My-n8-1rc" secondAttribute="height" id="f8A-Pn-bue"/>
                                     <constraint firstItem="Mjk-oZ-Hxm" firstAttribute="width" secondItem="5My-n8-1rc" secondAttribute="width" id="oMH-hJ-mn5"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BJX-qK-fbZ"/>
+                                        <exclude reference="f8A-Pn-bue"/>
+                                        <exclude reference="SUu-Nd-VWa"/>
+                                        <exclude reference="oMH-hJ-mn5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="f8A-Pn-bue"/>
+                                        <include reference="SUu-Nd-VWa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="BJX-qK-fbZ"/>
+                                        <include reference="oMH-hJ-mn5"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,7 +138,9 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
+                        <outlet property="buttonsStackView" destination="Mjk-oZ-Hxm" id="5pp-CG-kjr"/>
                         <outlet property="counterLabel" destination="yS1-BS-xfH" id="dnB-rD-gi6"/>
+                        <outlet property="mainStackView" destination="5My-n8-1rc" id="0Z9-cg-F0R"/>
                         <outlet property="pauseButton" destination="3cH-KD-rJy" id="JdA-mf-vjd"/>
                         <outlet property="resetButton" destination="NSb-99-wCG" id="Hpw-VD-Iau"/>
                         <outlet property="startButton" destination="NG4-ob-R4y" id="xP9-cf-YrJ"/>
