@@ -12,6 +12,10 @@ class MainVC: UIViewController {
     
     var timer = Timer()
 
+    @IBOutlet weak var mainStackView: UIStackView!
+    
+    @IBOutlet weak var buttonsStackView: UIStackView!
+    
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
@@ -74,5 +78,26 @@ class MainVC: UIViewController {
     func Counter() {
         displayTime += 1
     }
+    
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        
+        let deviceOrientation = UIDevice.current.orientation
+        let left = UIDeviceOrientation.landscapeLeft
+        let right = UIDeviceOrientation.landscapeRight
+        
+        if deviceOrientation == left || deviceOrientation == right {
+            print("1")
+            mainStackView.axis = UILayoutConstraintAxis.horizontal
+            buttonsStackView.axis = UILayoutConstraintAxis.vertical
+        } else {
+            print("2")
+            mainStackView.axis = UILayoutConstraintAxis.vertical
+            buttonsStackView.axis = UILayoutConstraintAxis.horizontal
+        }
+        
+    }
+    
+    
 }
 
